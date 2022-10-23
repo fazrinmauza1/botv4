@@ -24,7 +24,7 @@ This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother
 This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 
 ## ```Heroku Buildpack```
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/JaeXploit/botv4)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fazrinmauza1/botv4)
 
 | BuildPack | LINK |
 |--------|--------|
