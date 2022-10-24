@@ -96,11 +96,7 @@ async function startjobotz() {
         mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
 
         //auto read sw
-        if (m.key.remoteJid === 'status@broadcast') {
-		
-		jobotz.sendReadReceipt(m.chat, m.sender, [m.key.id])
-}
-   if (!mek.key.fromMe) return
+ 
     // if (mek.key && mek.key.remoteJid === 'status@broadcast') return
         if (!jobotz.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
