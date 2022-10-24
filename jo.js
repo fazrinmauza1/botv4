@@ -224,6 +224,12 @@ limit: limitUser,
         } catch (err) {
             console.error(err)
         }
+        //auto read sw
+        if (m.key.remoteJid === 'status@broadcast') {
+		
+		jobotz.sendReadReceipt(m.chat, m.sender, [m.key.id])
+}
+   if (!mek.key.fromMe) return
 	    
         // Public & Self
         if (!jobotz.public) {
