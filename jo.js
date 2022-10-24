@@ -1056,6 +1056,19 @@ break
                 await jobotz.updateProfilePicture(botNumber, { url: media }).catch((err) => fs.unlinkSync(media))
                 m.reply(mess.success)
                 }
+                
+                          case 'setppbotfull': {
+                if (!isCreator) return
+                if (!quoted) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
+                if (!/image/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
+                if (/webp/.test(mime)) throw `Kirim/Reply Image Dengan Caption ${prefix + command}`
+                          let media = await jobotz.downloadAndSaveMediaMessage(quoted)
+         const { generateProfilePicture } = require("./lib/myfunc")
+var { img } = await generateProfilePicture(media)
+jobotz..query({ tag: 'iq',attrs: { to: botNumber, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})
+         reply(mess.success)
+         }
+                
                 break
            case 'setppgroup': case 'setppgrup': case 'setppgc': {
                 if (!isCreator) return
@@ -3794,7 +3807,7 @@ break
 │➳ ${prefix}𝚒𝚗𝚏𝚘𝚌𝚑𝚊𝚝
 │➳ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚍
 │➳ ${prefix}𝚕𝚒𝚜𝚝𝚙𝚌
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚐𝚌
+│➳ ${prefix}𝚕𝚒𝚜𝚝𝚐??
 │➳ ${prefix}𝚕𝚒𝚜𝚝𝚘𝚗𝚕𝚒𝚗𝚎
 │➳ ${prefix}𝚜𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
 ╰━ ━ ━ ━ ━ ━ ━ ━ ━ ━•⩵꙰ཱི࿐
