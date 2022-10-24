@@ -259,14 +259,14 @@ green(), 'from', chalk.green(pushname), 'in', chalk.green(groupName ? groupName 
 
 
 	// auto set bio
-	if (db.data.settings[botNumber].autobio) {
-	    let setting = global.db.data.settings[botNumber]
-	    if (new Date() * 1 - setting.status > 1000) {
-		let uptime = await runtime(process.uptime())
-		await jobotz.setStatus(`${jobotz.user.name} | Runtime : ${runtime(uptime)}`)
-		setting.status = new Date() * 1
-	    }
-	}
+//	if (db.data.settings[botNumber].autobio) {
+	//    let setting = global.db.data.settings[botNumber]
+	  //  if (new Date() * 1 - setting.status > 1000) {
+	//	let uptime = await runtime(process.uptime())
+	//	await jobotz.setStatus(`${jobotz.user.name} | Runtime : ${runtime(uptime)}`)
+	//	setting.status = new Date() * 1
+	   // }
+	//}
 	    
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
