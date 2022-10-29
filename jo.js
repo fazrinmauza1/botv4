@@ -637,7 +637,7 @@ user.afkReason = ''
 	    
         switch(command) {
         
-        
+        case 'setcmd': {
                     if (!isCreator) return
                 if (!m.quoted) throw 'Reply Pesan!'
                 if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
